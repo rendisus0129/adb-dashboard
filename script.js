@@ -257,3 +257,33 @@ document.getElementById(id)
 .classList.remove("hide");
 
 }
+// FITUR SEARCH SALESMAN
+
+document.getElementById("search")
+.addEventListener("keyup", function(){
+
+let keyword = this.value.toLowerCase();
+
+
+document.querySelectorAll(".card")
+.forEach(card=>{
+
+
+let nama = card.innerText.toLowerCase();
+
+
+if(nama.includes(keyword)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+
+});
+
+
+});
