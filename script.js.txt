@@ -1,0 +1,88 @@
+const adb = [
+
+{
+nama:"ADB DJAMIL",
+rayon:"RAYON A",
+link:"https://docs.google.com/spreadsheets/d/1ujfNqB6_tzoWpUZbix1rAqMXyxrLKX9RJ_Kk2DHM5C8/edit"
+},
+
+{
+nama:"ADB EGY",
+rayon:"RAYON A",
+link:"https://docs.google.com/spreadsheets/d/1uBgRqOy43sJ0SYbdvA-RyuC7j4ATPM9XjclkVa8CE7Y/edit"
+},
+
+
+{
+nama:"ADB SOPIAN HADI",
+rayon:"RAYON A",
+link:"https://docs.google.com/spreadsheets/d/1E7X9fKFzxCb2_DOo0ptmlINPrbG4i2Y04B9dsZ9QH3c/edit"
+},
+
+
+{
+nama:"ADB DIKI",
+rayon:"RAYON B",
+link:"https://docs.google.com/spreadsheets/d/1j01Uw23LaU8_gqHLmiP4fX2w_1w-_hwBxuQT8MUtYo4/edit"
+},
+
+
+{
+nama:"ADB TEGUH",
+rayon:"RAYON B",
+link:"https://docs.google.com/spreadsheets/d/1PYS-cJR27tY3F6pWAl_w5Ej0aQ4RZ0BQTuxoJj-rEvg/edit"
+}
+
+];
+
+
+
+function load(){
+
+let html="";
+
+adb.forEach(x=>{
+
+html+=`
+
+<div class="card">
+
+<h3>${x.nama}</h3>
+
+<p>${x.rayon}</p>
+
+
+<a href="${x.link}" target="_blank">
+
+Lihat Aktivitas
+
+</a>
+
+
+</div>
+
+`;
+
+});
+
+
+document.getElementById("adbList").innerHTML=html;
+
+}
+
+
+
+function show(id){
+
+document.querySelectorAll(".page")
+.forEach(x=>x.classList.add("hide"));
+
+
+document.getElementById(id)
+.classList.remove("hide");
+
+}
+
+
+
+load();

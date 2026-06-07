@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ADB Sales Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<img src="https://kommodo.ai/i/EIfzxskOAruwnAe3AtUM" class="logo">
+
+<h1>
+PT. ANUGRAH DAMAI BERJAYA
+</h1>
+
+<p>
+Sales Activity Dashboard
+</p>
+
+</header>
+
+
+
+<div class="search">
+
+<input 
+type="text" 
+id="search"
+placeholder="Cari nama salesman..."
+>
+
+</div>
+
+
+
+<nav>
+
+<button onclick="show('home')">
+🏠 Beranda
+</button>
+
+<button onclick="show('adb')">
+🔵 ADB
+</button>
+
+<button onclick="show('atss')">
+🟠 ATSS
+</button>
+
+</nav>
+
+
+
+
+<section id="home" class="page">
+
+
+<h2>Menu Utama</h2>
+
+
+<div class="grid">
+
+
+<div class="menu">
+
+<h3>🗺 Maps Customer</h3>
+
+<p>
+Akses lokasi pelanggan dan area kerja sales.
+</p>
+
+<a href="https://www.google.com/maps/d/edit?mid=1wXonIh60CQ6xAu8rMrplhNspl3FlJ3M&usp=drive_link"
+target="_blank">
+BUKA MAP
+</a>
+
+</div>
+
+
+
+<div class="menu">
+
+<h3>📦 Request Freezer</h3>
+
+<p>
+Pengajuan tarik dan tugging freezer.
+</p>
+
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSd-ZGE8bk8XVS97TeqHBuwcstd5nIuACkXIkK89Jhbw-DFOSA/viewform"
+target="_blank">
+
+REQUEST
+
+</a>
+
+</div>
+
+
+
+
+<div class="menu">
+
+<h3>📋 Request PJP</h3>
+
+<p>
+Pengajuan PJP salesman.
+</p>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSd-ZGE8bk8XVS97TeqHBuwcstd5nIuACkXIkK89Jhbw-DFOSA/viewform"
+target="_blank">
+
+REQUEST
+
+</a>
+
+</div>
+
+
+
+
+<div class="menu">
+
+<h3>📊 Performance Sales</h3>
+
+<a href="https://docs.google.com/spreadsheets/d/11ctHDGq1QmtklSRCP3OMzx4RZDGyy5sapFa1jXVtk3c/edit"
+target="_blank">
+
+OPEN DASHBOARD
+
+</a>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="adb" class="page hide">
+
+<h2>ADB SALESMAN</h2>
+
+
+<div id="adbList" class="grid"></div>
+
+
+</section>
+
+
+
+
+
+<section id="atss" class="page hide">
+
+
+<h2>ATSS SALESMAN</h2>
+
+
+<div id="atssList" class="grid"></div>
+
+
+</section>
+
+
+
+
+<footer>
+
+© ADB 2026 - Internal Sales System
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
