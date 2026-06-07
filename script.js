@@ -356,3 +356,28 @@ show("atss");
 
 
 });
+function openFoto(url){
+
+let modal =
+document.getElementById("fotoModal");
+
+
+let img =
+document.getElementById("fotoBesar");
+
+
+img.src=url;
+
+
+modal.style.display="flex";
+
+}
+
+
+
+function closeFoto(){
+
+document.getElementById("fotoModal")
+.style.display="none";
+
+}
