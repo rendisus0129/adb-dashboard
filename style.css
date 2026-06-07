@@ -206,3 +206,36 @@ transform:scale(1);
 }
 
 }
+.maps-list{
+
+display:grid;
+
+gap:10px;
+
+margin-top:15px;
+
+}
+
+
+.maps-list a{
+
+background:#062a5c;
+
+font-size:14px;
+
+padding:12px;
+
+border-radius:12px;
+
+transition:.2s;
+
+}
+
+
+.maps-list a:hover{
+
+background:#ff7a00;
+
+transform:translateY(-3px);
+
+}
