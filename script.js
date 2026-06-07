@@ -266,26 +266,22 @@ document.getElementById("search")
 let keyword = this.value.toLowerCase();
 
 
-// kalau ada isi pencarian
-if(keyword !== ""){
+let ditemukan = false;
 
 
-// pindah otomatis ke ADB
-show("adb");
+// cek ADB
 
-
-
-// filter semua card
-document.querySelectorAll(".card")
+document.querySelectorAll("#adbList .card")
 .forEach(card=>{
 
 
 let text = card.innerText.toLowerCase();
 
 
-if(text.includes(keyword)){
+if(text.includes(keyword) && keyword !== ""){
 
 card.style.display="block";
+ditemukan=true;
 
 }else{
 
@@ -293,14 +289,39 @@ card.style.display="none";
 
 }
 
+});
+
+
+
+// cek ATSS
+
+document.querySelectorAll("#atssList .card")
+.forEach(card=>{
+
+
+let text = card.innerText.toLowerCase();
+
+
+if(text.includes(keyword) && keyword !== ""){
+
+card.style.display="block";
+ditemukan=true;
+
+}else{
+
+card.style.display="none";
+
+}
 
 });
 
 
-}else{
 
 
-// kalau kosong tampilkan semua lagi
+// kalau kosong tampilkan semua
+
+if(keyword===""){
+
 
 document.querySelectorAll(".card")
 .forEach(card=>{
@@ -308,6 +329,27 @@ document.querySelectorAll(".card")
 card.style.display="block";
 
 });
+
+
+}
+
+
+// otomatis pindah menu sesuai hasil
+
+if(ditemukan){
+
+
+if(
+document.querySelector("#adbList .card:not([style*='none'])")
+){
+
+show("adb");
+
+}else{
+
+show("atss");
+
+}
 
 
 }
