@@ -266,14 +266,24 @@ document.getElementById("search")
 let keyword = this.value.toLowerCase();
 
 
+// kalau ada isi pencarian
+if(keyword !== ""){
+
+
+// pindah otomatis ke ADB
+show("adb");
+
+
+
+// filter semua card
 document.querySelectorAll(".card")
 .forEach(card=>{
 
 
-let nama = card.innerText.toLowerCase();
+let text = card.innerText.toLowerCase();
 
 
-if(nama.includes(keyword)){
+if(text.includes(keyword)){
 
 card.style.display="block";
 
@@ -287,30 +297,20 @@ card.style.display="none";
 });
 
 
+}else{
+
+
+// kalau kosong tampilkan semua lagi
+
+document.querySelectorAll(".card")
+.forEach(card=>{
+
+card.style.display="block";
+
 });
-function openFoto(url){
-
-let modal =
-document.getElementById("fotoModal");
-
-
-let img =
-document.getElementById("fotoBesar");
-
-
-img.src=url;
-
-
-modal.style.display="flex";
 
 
 }
 
 
-
-function closeFoto(){
-
-document.getElementById("fotoModal")
-.style.display="none";
-
-}
+});
