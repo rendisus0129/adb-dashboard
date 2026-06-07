@@ -207,13 +207,26 @@ html+=`
 
 <div class="card">
 
+
+<img 
+class="foto-sales"
+src="${x.foto}"
+onerror="this.src='foto/default.jpg'"
+>
+
+
 <h3>${x.nama}</h3>
+
 
 <p>${x.rayon}</p>
 
+
 <a href="${x.link}" target="_blank">
+
 Lihat Aktivitas
+
 </a>
+
 
 </div>
 
