@@ -159,57 +159,6 @@ display:none;
 
 position:fixed;
 
-z-index:999;
-
-left:0;
-top:0;
-
-width:100%;
-height:100%;
-
-background:rgba(0,0,0,.85);
-
-justify-content:center;
-align-items:center;
-
-}
-
-
-.foto-besar{
-
-max-width:90%;
-
-max-height:90%;
-
-border-radius:20px;
-
-box-shadow:0 10px 40px black;
-
-animation:zoom .3s;
-
-}
-
-
-@keyframes zoom{
-
-from{
-
-transform:scale(.5);
-
-}
-
-
-to{
-
-transform:scale(1);
-
-}
-.modal{
-
-display:none;
-
-position:fixed;
-
 z-index:9999;
 
 left:0;
@@ -269,3 +218,20 @@ background:#ff7a00;
 transform:translateY(-3px);
 
 }
+
+
+@keyframes zoom{
+
+from{
+
+transform:scale(.5);
+
+}
+
+
+to{
+
+transform:scale(1);
+
+}
+
