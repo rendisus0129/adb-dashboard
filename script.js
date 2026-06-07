@@ -211,7 +211,7 @@ html+=`
 <img 
 class="foto-sales"
 src="${x.foto}"
-onerror="this.src='foto/profil_icon.png'"
+onerror="this.src='foto/default.jpg'"
 >
 
 
