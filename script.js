@@ -210,7 +210,8 @@ html+=`
 
 <img 
 class="foto-sales"
-src="${x.foto}"
+src="${x.foto || 'foto/default.jpg'}"
+onclick="openFoto('${x.foto}')"
 onerror="this.src='foto/default.jpg'"
 >
 
