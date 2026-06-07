@@ -151,3 +151,58 @@ margin:0 auto 15px;
 border:4px solid #ff7a00;
 
 }
+/* POPUP FOTO */
+
+.modal{
+
+display:none;
+
+position:fixed;
+
+z-index:999;
+
+left:0;
+top:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.85);
+
+justify-content:center;
+align-items:center;
+
+}
+
+
+.foto-besar{
+
+max-width:90%;
+
+max-height:90%;
+
+border-radius:20px;
+
+box-shadow:0 10px 40px black;
+
+animation:zoom .3s;
+
+}
+
+
+@keyframes zoom{
+
+from{
+
+transform:scale(.5);
+
+}
+
+
+to{
+
+transform:scale(1);
+
+}
+
+}
